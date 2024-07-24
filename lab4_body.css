@@ -1,0 +1,26 @@
+.body{
+    display: block;
+    background-color: antiquewhite;
+    margin-top: 30px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 3px; 
+    }
+    
+    .image-grid > img {
+        border: 2px solid black;
+        border-radius: 10px;
+        height: 500px;
+        object-fit: cover;
+        width: 100%; 
+        transition: transform 0.3s ease, width 0.3s ease; 
+    }
+    
+    .image-grid > img:hover {
+        transform: scale(1.1); 
+        z-index: 1; 
+    }
+    
