@@ -16,12 +16,16 @@
             text-shadow: 0px 0px 5px black;
         }
         body{
-            background: url('/images_css/car4.jpg') no-repeat center center fixed ;
+            background: linear-gradient(rgba(174, 120, 2, 0.5), rgba(0174, 120, 2, 0.5)), url('/images/car4.jpg') no-repeat center center fixed ;
             background-size: cover;
-            position: relative;
-            
-            z-index: -3;
 
+        }
+        section{
+            background-color: black;
+            text-align: justify;
+            padding: 25px;
+            border-radius: 10px;
+            border-color: 5px solid bisque ;
         }
         
         .overlay {
@@ -30,16 +34,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            
-    
-
         }
     
         .container {
             position: relative;
             z-index: 2;
             width: 80%;
-            margin: 0 auto;
+            margin:  auto ;
             padding: 20px;
         }
         header {
@@ -81,31 +82,7 @@
         <h1 style="background-color: black">About Moris Cars</h1>
 
     </header>
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email ID</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container">
         <section>
             <h2>Our Mission</h2>
@@ -121,10 +98,7 @@
             <p>Over the years, we have introduced numerous groundbreaking models that have set new standards in the industry. From the development of our first hybrid vehicle to the launch of our latest electric car, our journey has been marked by a series of milestones that reflect our commitment to progress and sustainability.</p>
             <p>Today, Moris Cars continues to thrive on the principles that defined our start: innovation, quality, and a customer-centric approach. We look forward to the road ahead as we drive towards a brighter, more sustainable future for all.</p>
         </section>
-        <!-- Button to open the modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
-            Login
-        </button>
+        
     </div>
 
     <footer>
@@ -134,8 +108,6 @@
     
     
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
